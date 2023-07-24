@@ -8,8 +8,8 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "lemma",
-//        uniqueConstraints={@UniqueConstraint(columnNames={"lemma", "site_id"},
-//                name = "UK_lemma_lemma_site")},
+        uniqueConstraints={@UniqueConstraint(columnNames={"lemma", "site_id"},
+                name = "UK_lemma_lemma_site")},
         indexes = {@javax.persistence.Index(columnList = "lemma",
                 name = "KEY_lemma_lemma")})
 @Data

@@ -3,6 +3,7 @@ package org.example.lemmatizator;
 import org.apache.lucene.morphology.LuceneMorphology;
 import org.apache.lucene.morphology.russian.RussianLuceneMorphology;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

@@ -152,7 +152,7 @@ public class SearchResponseBuilder implements Runnable {
                 relevance.setPage(index.getPage());
                 relevanceMap.put(index.getPage().getId(), relevance);
             }
-            LemmaRank lemmaRank = new LemmaRank(lemma, index.getRank());
+            LemmaRank lemmaRank = new LemmaRank(lemma, (float) index.getRank());
             relevance.getLemmaRanks().add(lemmaRank);
         }
         relevanceSet = new HashSet<>(relevanceMap.values());
@@ -168,7 +168,7 @@ public class SearchResponseBuilder implements Runnable {
             if (!relevanceSet.contains(relevance)) {
                 continue;
             }
-            LemmaRank lemmaRank = new LemmaRank(lemma, index.getRank());
+            LemmaRank lemmaRank = new LemmaRank(lemma, (float) index.getRank());
             relevance.getLemmaRanks().add(lemmaRank);
             lemmaRelevances.add(relevance);
         }

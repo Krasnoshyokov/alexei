@@ -218,7 +218,6 @@ public class Node {
                 String contLow = attrContent.toLowerCase(Locale.ROOT);
                 for (String ext : EXTEMSIONS_TO_SKIP) {
                     if (contLow.contains(ext)) {
-                        continue;
                     }
                 }
 
