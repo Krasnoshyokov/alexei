@@ -44,7 +44,7 @@ config:
     - url: https://nikoartgallery.com
       name: Niko ART GALLERY
       pause: 0
-    - url: https://et-cetera.ru/mobile
+    - url: https://et-cetera.ru
       name: Театр «Et Cetera»
       pause: 0
     - url: https://www.lutherancathedral.ru
